@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.primary-color {
+  color: #028417 !important;
+}
+
+.ui.button.primary-button {
+  background-color: #028417;
+  color: white;
+}
+
+.mg-top-40 {
+  margin-top: 40px;
+}
+
+.mg-top-20 {
+  margin-top: 20px;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+#root .sub-container {
+  padding-bottom: 300px;
+}
+
+.ui.header {
+  text-transform: uppercase;
+}
+
+.card.card-container {
+  border: none;
+}
+
+.paragraph-container p {
+  word-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.ui.card>.content>.header.card-title {
+  color: #028417;
+  margin-top: 15px;
+}
+
+footer {
+  background-color: white;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+
+footer .footer-logo-container {
+  min-height: 210px;
+}
+
+footer .ui.list>.item {
+  margin-bottom: 10px;
+}
+
+footer .list .footer-section-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #028417;
+}
+
+footer .ui.list>a.item {
+  color: black;
+  margin-bottom: 5px;
+}
+
+footer .ui.list>a.item i.icon {
+  color: black;
+}
+
+footer .ui.list>a.item i.icon:hover {
+  color: black;
+}
+
+footer .ui.list>a.item:hover .icon {
+  color: black;
+}
+
+footer .ui.list>a.item:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 750px) {
+  #root .sub-container {
+    padding-bottom: 700px;
+  }
+  .hide-on-mobile {
+    display: none
+  }
+}
+
