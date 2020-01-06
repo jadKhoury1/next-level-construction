@@ -63,6 +63,16 @@ const Header = ({ active, setActive}) => {
                 >
                     Contactez-nous 
                 </Link>
+                <Link 
+                    className={`item ${active === '/employee' ? 'active' : ''}`} 
+                    to="/employee"
+                    onClick={() => {
+                        setActive('/employee');
+                        window.scrollTo(0, 0);
+                    }}
+                >
+                    Code éthique
+                </Link>
             </React.Fragment>
         );
     };

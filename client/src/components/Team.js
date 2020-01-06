@@ -12,7 +12,7 @@ const TeamInfo = [
     },
     {
         image: MichelleImg,
-        name: 'Michelle',
+        name: 'Michele Abboud',
         occupation: 'Fondatrice',
         description: "Michele est une ingénieure civil titulaire d'un doctorat de l'Universite Paris-Sorbonne . Elle a plus de 20 ans d'expérience au sein de l'Universite Saint-Joseph de Beyrouth et a Dar Al Handasah."
     }
@@ -46,7 +46,7 @@ const Team = () => {
         <div className="mg-top-40" style={{ backgroundColor: '#edf2f5', padding: '20px 0 40px'}} id="team">
             <div className="ui container">
                 <h3 className="ui centered aligned huge header primary-color">
-                    Notre équipe
+                    Nos Fondateurs
                 </h3>
                 <div className="ui centered alined grey sub header" style={{ margin: '15px 0 30px 0' }}>
                     Rencontrez notre équipe

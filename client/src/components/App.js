@@ -6,6 +6,7 @@ import Home from './Home';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import Footer from './Footer';
+import Employee from './Employee';
 
 class App extends Component {
 
@@ -28,6 +29,7 @@ class App extends Component {
                                 <Route path="/" exact component={Home} />
                                 <Route path="/aboutUs" component={AboutUs} />
                                 <Route path="/contactUs" component={ContactUs} />
+                                <Route path="/Employee" component={Employee} />
                             </Switch>
                         </div>
                         <Footer setActive={active => this.setState({active})}/>

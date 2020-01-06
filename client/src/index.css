@@ -35,6 +35,10 @@ code {
   padding-bottom: 300px;
 }
 
+.ui .section {
+  margin-top: 20px;
+}
+
 .ui.header {
   text-transform: uppercase;
 }

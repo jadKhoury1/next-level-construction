@@ -43,11 +43,17 @@ const Footer = ({ setActive }) => {
                                 window.scrollTo(0, 0);
                                 setActive('/contactUs');
                             }} >Contactez-nous </Link>
+                            <Link className="item" to="/employee" onClick={() => {
+                                window.scrollTo(0, 0);
+                                setActive('/employee');
+                            }}>
+                                Code éthique
+                            </Link>
                         </div>
                     </div>
                     <div className="ui six wide column footer-section">
                         <div className="ui list">
-                         <div className="item footer-section-title">PARLEZ AVEC NOUS</div>
+                         <div className="item footer-section-title">CONTACTEZ-NOUS</div>
                             <div className="item">
                                 <i className="white large map marker alternate icon"></i>
                                 <div className="content">
