@@ -10,9 +10,12 @@ const Home = () => {
         <div>
             <ImageIntro />
             <Vision />
+            <div id="nos-valeurs"></div>
             <Cards />
             <Team />
+             <div id="projects"></div>
             <Projects />
+            
         </div>
     );
 };

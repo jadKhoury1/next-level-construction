@@ -5,9 +5,9 @@ const ImageIntro = () => {
     return (
         <div style={{ 
             maxWidth: '1500px', 
-            marginBottom: '-4px', 
+            marginBottom: '-5px', 
             position: 'relative',
-            fontSize: '40px',
+            fontSize: '3vw',
             color: 'white',
             fontWeight: 'bold',
             textTransform: 'uppercase'
@@ -23,7 +23,7 @@ const ImageIntro = () => {
                    >
                     NEXT LEVEL
                    </span> 
-                   <span style={{ marginLeft: '10px' }} className="hide-on-mobile">Construction</span>
+                   <span style={{ marginLeft: '1vw' }}>Construction</span>
                 </div>
              
             </div>

@@ -22,7 +22,7 @@ const renderTeam = () => {
     return TeamInfo.map(({ image, name, occupation, description}) => {
         return (
             <div className="column" key={name}>
-                <div className="ui raised card" style={{ height: '440px'}}>
+                <div className="ui raised card" style={{ height: '440px', margin: '0 auto'}}>
                     <div className="image" style={{ height: '250px'}}>
                         <img src={image} style={{ height: '100%'}} alt={name}/>
                     </div>

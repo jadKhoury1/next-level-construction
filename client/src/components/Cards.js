@@ -59,7 +59,7 @@ const renderCards = () => {
 
 const Cards = () => {
     return (
-        <div className="ui container mg-top-40" id="nos-valeurs">
+        <div className="ui container mg-top-40">
             <h3 className="ui centered aligned huge header primary-color">
                 Nos Valeurs 
             </h3>

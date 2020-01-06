@@ -47,7 +47,7 @@ const renderProjects = () => {
 
 const Projects = () => {
     return (
-        <div className="mg-top-40" id="projects">
+        <div className="mg-top-40" >
             <div className="ui container">
                 <h3 className="ui centered aligned huge header primary-color">
                     NOS PROJETS

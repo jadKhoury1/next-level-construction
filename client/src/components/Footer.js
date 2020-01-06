@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import LogoImg from '../images/logo.jpeg';
 import history from '../history';
 
-const Footer = () => {
+const Footer = ({ setActive }) => {
     return (
         <footer>
             <div className="ui container">
@@ -23,11 +23,26 @@ const Footer = () => {
                     <div className="ui two wide column footer-section">
                         <div className="ui list">
                             <div className="item footer-section-title">EXPLORER</div>
-                            <Link className="item" to="/" onClick={() => window.scrollTo(0, 0)}>Accueil</Link>
-                            <a className="item" href="#nos-valeurs" onClick={() => history.push('/#nos-valeurs')}>Nos Valeurs</a>
-                            <a className="item" href="#projects" onClick={() => history.push('/#projects')} >Nos Projets</a>
-                            <Link className="item" to="/aboutUs" onClick={() => window.scrollTo(0, 0)}>L’ entreprise</Link>
-                            <Link className="item" to="/contactUs" onClick={() => window.scrollTo(0, 0)} >Contactez-nous </Link>
+                            <Link className="item" to="/" onClick={() => {
+                                window.scrollTo(0, 0);
+                                setActive('/');
+                            }}>Accueil</Link>
+                            <a className="item" href="#nos-valeurs" onClick={() => {
+                                history.push('/#nos-valeurs');
+                                setActive('/#nos-valeurs')
+                            }}>Nos Valeurs</a>
+                            <a className="item" href="#projects" onClick={() => {
+                                history.push('/#projects');
+                                setActive('/#projects');
+                            }} >Nos Projets</a>
+                            <Link className="item" to="/aboutUs" onClick={() => {
+                                window.scrollTo(0, 0);
+                                setActive('/aboutUs');
+                            }}>L’ entreprise</Link>
+                            <Link className="item" to="/contactUs" onClick={() => {
+                                window.scrollTo(0, 0);
+                                setActive('/contactUs');
+                            }} >Contactez-nous </Link>
                         </div>
                     </div>
                     <div className="ui six wide column footer-section">

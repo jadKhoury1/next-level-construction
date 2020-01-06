@@ -8,12 +8,21 @@ import ContactUs from './ContactUs';
 import Footer from './Footer';
 
 class App extends Component {
+
+    constructor(props) {
+        super(props);
+        
+        const { pathname, hash} = history.location;
+        const path = `${pathname}${hash ? `${hash}`: ''}`
+        this.state = { active: path };
+    }
+
     render() {
         return (
             <div>
                 <Router history={history}>
                     <div>
-                        <Header />
+                        <Header active={this.state.active} setActive={active => this.setState({active})} />
                         <div className="sub-container">
                             <Switch>
                                 <Route path="/" exact component={Home} />
@@ -21,7 +30,7 @@ class App extends Component {
                                 <Route path="/contactUs" component={ContactUs} />
                             </Switch>
                         </div>
-                        <Footer />
+                        <Footer setActive={active => this.setState({active})}/>
                     </div>
                 </Router> 
             </div>
